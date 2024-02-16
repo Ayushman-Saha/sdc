@@ -104,18 +104,18 @@ export default function Home() {
     <div className="w-full">
       <Hero/>    
       <CommaBreak/>
-      <div className="mx-auto max-w-7xl px-2 lg:px-0 mt-16">
+      <div className="mx-auto max-w-7xl px-2 lg:px-0 my-4 mb-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-100 sm:text-4xl lg:text-5xl lg:leading-tight">
             What we do?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-800 dark:text-gray-400">
+          <p className="mx-auto my-4 max-w-2xl text-xl text-gray-800 dark:text-gray-400">
           From resume formatting to career planning, SDC is your swiss army knife for navigating student life.
           </p>
         </div>
         <div/>
         </div>
-        <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+        <hr className="w-48 h-1 mx-auto my- bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
         <ul>
 
             {data.map(item => {

@@ -35,7 +35,7 @@ export default function Header({theme, changeTheme}) {
 
   return (
     <header className="mt-4 bg-gray-100 dark:bg-gray-800">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <p className="-m-1.5 p-1.5">
             <NavLink to="/">
@@ -144,6 +144,11 @@ export default function Header({theme, changeTheme}) {
             </NavLink>
           </p>
           <p className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <NavLink to="/reports">
+                Monthly Reports
+            </NavLink>
+          </p>
+          <p className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
             <NavLink to="/contact">
                 Contact Us
             </NavLink>
@@ -242,6 +247,13 @@ export default function Header({theme, changeTheme}) {
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Our Team
+                </NavLink>
+                <NavLink
+                  to="/reports"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Monthly Reports
                 </NavLink>
                 <NavLink
                   to="/contact"

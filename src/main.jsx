@@ -9,6 +9,7 @@ import Contact from './components/contact_us/Contact'
 import Carma from './components/carma/Carma'
 import Ecell from './components/ecell/Ecell'
 import CarmaRead from './components/carma/CarmaRead'
+import Reports from './components/monthly_reports/Reports'
 // import App from './App'
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "carma/read/:id",
                 element: <CarmaRead/>
+            },
+            {
+                path: "reports",
+                element: <Reports/>
             }
         ]
     }
