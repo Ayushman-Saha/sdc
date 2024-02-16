@@ -1,0 +1,198 @@
+{
+    "secretary" :{
+        "position" : "Secretary",
+        "members" : [
+            {
+                "name" : "Saisab Sadhu",
+                "designation": "Secretary",
+                "mugshot" : "Just going to keep it short!",
+                "email" : "saisab21@iiserb.ac.in",
+                "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+                "image" : "22e2e.com" 
+            }
+        ]
+    },
+    "vice-secretary" : {
+        "position" : "Vice Secretary",
+        "members" : [
+        {
+            "name" : "Nirlipta Khandai",
+            "designation": "Vice-Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Manas Nandan",
+            "designation": "Vice-Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        }
+    ]},
+    "core-committee": {
+        "position" : "Core Committee",
+        "members" :  [
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        }
+    ]},
+    "core-team" : {
+        "position" : "Core Team",
+        "members" : [
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com"   
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        }
+
+    ]},
+    "trainee-team" : {
+        "position" : "Trainee Team",
+        "members" : [
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com"   
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        },
+        {
+            "name" : "Saisab Sadhu",
+            "designation": "Secretary",
+            "mugshot" : "Just going to keep it short!",
+            "email" : "saisab21@iiserb.ac.in",
+            "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+            "image" : "22e2e.com" 
+        }
+
+    ]},
+    "working-team" : {
+        "position": "Working Team",
+        "members": [
+            {
+                "name" : "Saisab Sadhu",
+                "designation": "Secretary",
+                "mugshot" : "Just going to keep it short!",
+                "email" : "saisab21@iiserb.ac.in",
+                "linkedIn" : "https://www.linkedin.com/in/saisab-sadhu/",
+                "image" : "22e2e.com" 
+            }
+        ]
+    }
+}
