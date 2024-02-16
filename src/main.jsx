@@ -10,12 +10,15 @@ import Carma from './components/carma/Carma'
 import Ecell from './components/ecell/Ecell'
 import CarmaRead from './components/carma/CarmaRead'
 import Reports from './components/monthly_reports/Reports'
+import Resources from './components/resources/Resources'
+import Error from './components/error/Error'
 // import App from './App'
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout/>,
+        errorElement : <Error/>,
         children: [
             {
                 path: "",
@@ -44,6 +47,10 @@ const router = createBrowserRouter([
             {
                 path: "reports",
                 element: <Reports/>
+            },
+            {
+                path: "resources",
+                element: <Resources/>
             }
         ]
     }
