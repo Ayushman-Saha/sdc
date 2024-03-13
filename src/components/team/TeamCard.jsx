@@ -1,7 +1,7 @@
 
 function TeamCard({name, designation, mugshot, theme, linkedIn, email, image}) {
   return (
-    <div className="mx-auto my-12 w-[300px] rounded-md border-4 border-gray-100 dark:border-white shadow-xl lg:basis-3/12">
+    <div className="mx-auto my-12 w-[300px] rounded-xl border-4 border-gray-100 dark:border-white shadow-md hover:shadow-2xl transition-shadow lg:basis-3/12">
     <img
       src={image}
       alt="Team Member"
@@ -9,7 +9,7 @@ function TeamCard({name, designation, mugshot, theme, linkedIn, email, image}) {
     />
     <div className="p-4">
       <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{name}</h1>
-      <h6 className="mt-3 font-medium text-gray-900 dark:text-gray-100">{designation}</h6>
+      <h6 className="mt-3 font-semibold text-gray-900 dark:text-gray-300 italic">{designation}</h6>
       <p className="mt-3 text-sm text-gray-800 dark:text-gray-200">
         {mugshot}
       </p>

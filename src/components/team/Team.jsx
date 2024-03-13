@@ -53,7 +53,7 @@ function Team() {
                 <>
                 <div className="mx-auto mt-4 mb-12 max-w-7xl px-2 lg:px-0">
                 <div className="mx-auto max-w-3xl text-center">
-                <h2 className="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-100 sm:text-4xl lg:text-5xl lg:leading-tight underline">
+                <h2 className="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-100 sm:text-4xl lg:text-5xl lg:leading-tight italic">
                     {TeamData[position]["position"]}
                 </h2>
                 </div>
@@ -64,7 +64,7 @@ function Team() {
                      return(
                         <TeamCard key={secData.email}
                         name={secData.name}
-                        designation={secData.designation}
+                        designation={secData.role}
                         mugshot={secData.mugshot}
                         theme = {theme}
                         linkedIn={secData.linkedIn}
