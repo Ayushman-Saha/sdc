@@ -1,10 +1,23 @@
 import TeamCard from "./TeamCard"
 import {useOutletContext} from "react-router-dom"
-import TeamData from "../../../data/team.json"
 import CommaBreak from "../utils/CommaBreak"
+import { useEffect, useState } from "react"
+import {Hourglass} from "react-loader-spinner"
 
 function Team() {
     const [theme] = useOutletContext()
+    const [TeamData, setTeamData] = useState([]) 
+
+    useEffect(() => {
+        fetch("https://script.google.com/macros/s/AKfycbzMxsVUu8e_JFxi7tQHwIWafBH35vrTbIjFAuepA0ZW1M7_jo4pCZWOYnswD4_wG-wH/exec")
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            setTeamData(data['data'])
+        })
+    },[])
+
   return (
     <>
     <div className="mx-auto mt-10 max-w-7xl px-2 lg:px-0">
@@ -20,6 +33,21 @@ function Team() {
 
         <CommaBreak/>
 
+        {TeamData.length === 0 ? 
+        <>
+        <div className="my-16">
+          <Hourglass
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="hourglass-loading"
+            wrapperStyle={{margin : "auto"}}
+            wrapperClass=""
+            colors={theme != "dark"? ['#fafafa', '#fafafa']: ["#121212", "#121212"]}
+            />
+        </div>
+        </> : 
+        <>
         {Object.keys(TeamData).map((position)=> {
             return (
                 <>
@@ -50,6 +78,10 @@ function Team() {
                 </>
             )
         })}
+        </>
+        }
+
+       
 
 
         {/* <div className="mx-auto mt-4 mb-12 max-w-7xl px-2 lg:px-0">

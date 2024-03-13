@@ -1,10 +1,10 @@
 
-function TeamCard({name, designation, mugshot, theme, linkedIn, email}) {
+function TeamCard({name, designation, mugshot, theme, linkedIn, email, image}) {
   return (
     <div className="mx-auto my-12 w-[300px] rounded-md border-4 border-gray-100 dark:border-white shadow-xl lg:basis-3/12">
     <img
-      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGh1bWFufGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-      alt="Laptop"
+      src={image}
+      alt="Team Member"
       className=" aspect-[1/1] w-full rounded-t-md object-cover"
     />
     <div className="p-4">

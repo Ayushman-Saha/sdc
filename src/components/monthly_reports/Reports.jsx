@@ -1,6 +1,25 @@
-import reports from "../../../data/reports.json"
+import { useEffect, useState } from 'react'
+import {useOutletContext} from "react-router-dom"
+import {Hourglass} from "react-loader-spinner"
+
 export default function Reports() {
+
+    const [reports, setReports] = useState({"report" : []})
+    const [theme] = useOutletContext()
+
+    useEffect(() => {
+        fetch("https://script.google.com/macros/s/AKfycbzMxsVUu8e_JFxi7tQHwIWafBH35vrTbIjFAuepA0ZW1M7_jo4pCZWOYnswD4_wG-wH/exec?type=report")
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                setReports(data['data'])
+            })
+      },[])
+
     const data = reports.report.reverse()
+
+
   return (
     <>
       <section className="mx-auto my-10 w-full max-w-7xl px-4 py-4">
@@ -12,7 +31,22 @@ export default function Reports() {
             </p>
           </div>
         </div>
-        <div className="mt-6 flex flex-col">
+        {data.size === 0 ? 
+        <>
+        <div className="my-16">
+          <Hourglass
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="hourglass-loading"
+            wrapperStyle={{margin : "auto"}}
+            wrapperClass=""
+            colors={theme != "dark"? ['#fafafa', '#fafafa']: ["#121212", "#121212"]}
+            />
+        </div>
+        </> :
+         <>
+         <div className="mt-6 flex flex-col">
           <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
               <div className="overflow-hidden border border-gray-200 md:rounded-lg">
@@ -49,6 +83,9 @@ export default function Reports() {
             </div>
           </div>
         </div>
+         </>
+         }
+        
       </section>
     </>
   )

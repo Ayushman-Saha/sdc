@@ -1,9 +1,26 @@
-import React from 'react'
-import {resources} from "../../../data/resources.json"
+import React, { useEffect, useState } from 'react'
+import {useOutletContext} from "react-router-dom"
+import {Hourglass} from "react-loader-spinner"
 
 export default function Resources() {
+
+  const [resources, setResouces] = useState([])
+  const [theme] = useOutletContext()
+
+  useEffect(() => {
+    fetch("https://script.google.com/macros/s/AKfycbzMxsVUu8e_JFxi7tQHwIWafBH35vrTbIjFAuepA0ZW1M7_jo4pCZWOYnswD4_wG-wH/exec?type=resource")
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            setResouces(data['data'])
+        })
+  },[])
+
   const data = resources
+  const keys = Object.keys(data)
   return (
+
     <>
       <section className="mx-auto w-full max-w-7xl px-4 py-4 my-8">
         <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
@@ -15,6 +32,22 @@ export default function Resources() {
           </div>
           
         </div>
+        
+        {resources.length === 0 ?
+         <>
+         <div className="my-16">
+          <Hourglass
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="hourglass-loading"
+            wrapperStyle={{margin : "auto"}}
+            wrapperClass=""
+            colors={theme != "dark"? ['#fafafa', '#fafafa']: ["#121212", "#121212"]}
+            />
+        </div>
+         </> : 
+        <>
         <div className="mt-6 flex flex-col">
           <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -40,18 +73,18 @@ export default function Resources() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
-                    {data.map((type) => (
-                      <React.Fragment key={type.type}>
+                    {keys.map((type) => (
+                      <React.Fragment key={data[type].title }>
                         <tr className="border-t border-gray-200">
                           <th
                             colSpan={3}
                             scope="col"
                             className="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm font-medium text-gray-500"
                           >
-                            {type.type}
+                            {type}
                           </th>
                         </tr>
-                        {type['data'].map((resource) => (
+                        {data[type].map((resource) => (
                           <tr key={resource.title}>
                             <td className="whitespace-nowrap px-12 py-4">
                               <div className="text-sm text-gray-900">{resource.title}</div>
@@ -75,6 +108,9 @@ export default function Resources() {
             </div>
           </div>
         </div>
+        </>
+    }
+        
         {/* <div className="mt-6 flex items-center justify-between">
           <a
             href="#"

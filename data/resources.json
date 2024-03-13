@@ -1,8 +1,5 @@
 {
-    "resources" : [
-        {
-          "type": "Compendium",
-         "data": [
+    "compendium" : [
             {
               "title": "Internship Compendium",
               "description" : "A comprehensive list of all the internships available to the students across the globe",
@@ -13,7 +10,5 @@
                 "description" : "A list of all the scholarships to aid the education of students",
                 "href": "https://sdc-iiserb.notion.site/60be1b668c15402895d7ca40b1725d95?v=e921b66b5a3040259ca38eed8b0112f9"
             }
-          ]
-        }
-    ]
+     ]
 }
