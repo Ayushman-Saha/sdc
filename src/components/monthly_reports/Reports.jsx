@@ -31,7 +31,7 @@ export default function Reports() {
             </p>
           </div>
         </div>
-        {data.size === 0 ? 
+        {data.length === 0 ? 
         <>
         <div className="my-16">
           <Hourglass
