@@ -1,12 +1,11 @@
 import { ArrowRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import CarmaCover from "../../assets/carma.jpg"
 
-export default function CarmaCard({ body, id}) {
+export default function CarmaCard({ body, id, image}) {
     return (
         <div className="mx-auto my-12 w-[200px] rounded-md border-4 border-gray-100 dark:border-white shadow-xl lg:basis-3/12">
         <img
-          src={CarmaCover}
+          src={image}
           alt="Laptop"
           className=" aspect-[5/7] w-full rounded-t-md object-cover"
         />
