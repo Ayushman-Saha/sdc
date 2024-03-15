@@ -17,7 +17,7 @@ function Carma() {
             })
       },[])
 
-      let data = carmaData.reverse()
+      let data = carmaData
   
   return (
    <>
@@ -37,7 +37,7 @@ function Carma() {
    </> : 
    <>
    <div className="mt-8 gap-6 flex flex-wrap justify-center">
-     {data.map((carma, index) => {
+     {data.toReversed().map((carma, index) => {
         let id = carma.href.substring(carma.href.indexOf("d/")+2, carma.href.indexOf("/view"))
          return <CarmaCard key={index} body={carma.title} id={id} image={carma.coverimage}/>
      })}

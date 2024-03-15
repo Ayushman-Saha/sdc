@@ -17,7 +17,7 @@ export default function Reports() {
             })
       },[])
 
-    const data = reports.report.reverse()
+    const data = reports.report
 
 
   return (
@@ -65,7 +65,7 @@ export default function Reports() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
-                    {data.map((report) => (
+                    {data.toReversed().map((report) => (
                       <tr key={report.title}>
                         <td className="whitespace-nowrap px-12 py-4">
                           <div className="text-sm text-gray-900 ">{report.title}</div>
