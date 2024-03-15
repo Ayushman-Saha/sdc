@@ -18,7 +18,7 @@ const works = [
   { name: 'CarMa', description: 'The career magazine ', href: '/carma', icon: BookOpenIcon },
   { name: 'Centre for Career Development', description: 'The official portal for placements and internships', href: 'https://ccd.iiserb.ac.in/', icon: AcademicCapIcon },
   { name: 'Entrepreneurship Cell', description: 'The place where ideas turns to reality', href: '/ecell', icon: BriefcaseIcon },
-  { name: 'MUN', description: 'Where critical thinking thrives and global issues meet innovative solutions', href: '#', icon: SquaresPlusIcon },
+  { name: 'MUN', description: 'Where critical thinking thrives and global issues meet innovative solutions', href: 'https://sites.google.com/view/iiserbmun/home', icon: SquaresPlusIcon },
 ]
 
 function classNames(...classes) {
