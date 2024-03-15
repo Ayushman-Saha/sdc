@@ -16,7 +16,7 @@ import Outreach from "../../assets/outreach.png"
 
 const data = [
     {
-        "heading" : "Centre for Career Development (CCD)",
+        "heading" : "Placements and Internships",
         "image" : CCDIllust,
         "href" : "https://icdpc.iiserb.ac.in/",
         "body" : [
@@ -25,7 +25,7 @@ const data = [
         ]
     },
     {
-        "heading" : "CarMa -The SDC’s Newsletter",
+        "heading" : "CarMa -The SDC’s Career Magazine",
         "image" : Carma,
         "href" : "",
         "body" : [
@@ -73,7 +73,7 @@ const data = [
         ]   
     },
     {
-        "heading" : "Student Mentorship and Volunteer Programme (With SAC)",
+        "heading" : "Student Mentorship and Volunteer Programme",
         "image" : Volunteer,
         "href" : "",
         "body" : [

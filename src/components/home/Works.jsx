@@ -17,7 +17,7 @@ export default function Works({heading, body, image, href, id}) {
             </div>
             <div className="relative lg:col-span-2 lg:-mr-8 xl:col-span-6 mx-4">
                 <img
-                className="aspect-[4/3] mt-24 rounded-xl shadow-xl border-4 border-white"
+                className=" mt-24 rounded-xl shadow-xl border-4 border-white"
                 src={image}
                 alt="Image"
                 />
@@ -26,7 +26,7 @@ export default function Works({heading, body, image, href, id}) {
             <>
             <div className="relative lg:col-span-2 lg:-mr-8 xl:col-span-6 mx-4">
                 <img
-                className="aspect-[4/3] mt-24 rounded-xl shadow-xl border-4 border-white"
+                className="mt-24 rounded-xl shadow-xl border-4 border-white"
                 src={image}
                 alt="Image"
                 />
