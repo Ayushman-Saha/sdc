@@ -77,7 +77,7 @@ const data = [
         "image" : Volunteer,
         "href" : "",
         "body" : [
-            "The SDC organises a mentorship programme for freshers where they are assigned student mentors to guide them with balancing academics and campus life. Students from the general body are invited to mentor freshers. Freshers arriving on campus are assisted by volunteers across the campus during their arrival to ensure they settle in smoothly under the Volunteer Programme that is run in collaboration with SAC."
+            "The SDC organises a mentorship programme for freshers where they are assigned student mentors to guide them with balancing academics and campus life. Students from the general body are invited to mentor freshers. Freshers arriving on campus are assisted by volunteers across the campus during their arrival to ensure they settle in smoothly under the Volunteer Programme."
         ]   
     },
     {
