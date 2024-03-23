@@ -33,7 +33,7 @@ export default function Works({heading, body, image, href, id}) {
             </div>
             <div className="flex flex-col justify-center px-4 py-12 ml-10 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
                 
-                <a className="mt-8 mb-4 text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100 underline" href={href} target="blank">
+                <a className="mt-8 mb-4 text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100 underline" href={href} target={href.substring(0,5) === "http" ? "_blank" : ""}>
                   {heading}
                 </a>
                 <ul className="mt-2">
